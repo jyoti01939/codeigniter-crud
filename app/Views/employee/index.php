@@ -55,13 +55,13 @@
         <?php
           if (session()->getFlashdata('status')) : ?>
          <div class="alert alert-success">
-          <?= "<h4>".session()->getFlashdata('status')."</h4>"?>
+          <?= session()->getFlashdata('status')?>
          </div>
           <?php endif; ?>
           <?php
           if (session()->getFlashdata('delete')) : ?>
          <div class="alert alert-danger">
-          <?= "<h4>".session()->getFlashdata('delete')."</h4>"?>
+          <?=session()->getFlashdata('delete')?>
          </div>
           <?php endif; ?>
             <div class="card">

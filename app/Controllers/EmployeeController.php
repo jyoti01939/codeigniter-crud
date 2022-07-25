@@ -43,13 +43,13 @@ class EmployeeController extends BaseController
             'designation' => $this->request->getPost('designation'),
         ];
         $employee->update($id,$data);
-        return redirect()->to(base_url('employee'))->with('status','Employee Updated Successfully!');
+        return redirect()->to(base_url('employee'))->with('status','Employee Data Updated Successfully!');
     }
 
     public function delete($id){
         $employee = new Employee();
         $employee->delete($id);
-        return redirect()->to(base_url('employee'))->with('delete','Employee Deleted Successfully!');
+        return redirect()->to(base_url('employee'))->with('delete','Employee Data Deleted Successfully!');
     }
 }
 

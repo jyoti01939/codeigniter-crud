@@ -35,11 +35,11 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
+// $routes->get('/', 'Home::index');
 
 //Crud employee data
 
-$routes->get('employee','EmployeeController::index');
+$routes->get('/','EmployeeController::index');
 $routes->get('employee_add','EmployeeController::create');
 $routes->post('employee_store','EmployeeController::store');
 $routes->get('employee/edit/(:num)','EmployeeController::edit/$1');

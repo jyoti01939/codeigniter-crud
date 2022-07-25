@@ -58,7 +58,7 @@
         <div class="card">
           <div class="card-header">
             <h1>EDIT EMPLOYEE
-              <a href="<?= base_url('employee') ?>" class="btn btn-primary btn-sm float-end">Back</a>
+              <a href="<?= base_url('/') ?>" class="btn btn-primary btn-sm float-end">Back</a>
             </h1>
           </div>
           <div class="card-body">
